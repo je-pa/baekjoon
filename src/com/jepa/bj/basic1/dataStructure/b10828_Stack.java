@@ -1,4 +1,4 @@
-package com.jepa.bj.basic1;
+package com.jepa.bj.basic1.dataStructure;
 import java.util.ArrayList;
 import java.util.Scanner;
 
