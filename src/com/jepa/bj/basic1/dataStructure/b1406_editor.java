@@ -1,4 +1,4 @@
-package com.jepa.bj.basic1;
+package com.jepa.bj.basic1.dataStructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class b1406_editor {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
-        Stack<String> left = new Stack();
+        Stack<String> left = new Stack<>();
         Stack<String> right = new Stack<>();
         String[] strArr = br.readLine().split("");
         for(String s : strArr){
