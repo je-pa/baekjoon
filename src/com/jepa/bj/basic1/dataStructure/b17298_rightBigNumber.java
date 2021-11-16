@@ -15,14 +15,10 @@ public class b17298_rightBigNumber {
         Stack<Integer> st = new Stack<>();
         st.push(0);
         for(int i=1 ; i<N ; i++){
-            if(a[st.peek()]>=a[i]){
-                st.push(i);
-            }else{
-                while(!st.empty()&&a[st.peek()]<a[i]){
-                    a[st.pop()]=a[i];
-                }
-                st.push(i);
+            while (!st.empty() && a[st.peek()] < a[i]) {
+                a[st.pop()] = a[i];
             }
+            st.push(i);
         }
         while(!st.empty()){
             a[st.pop()]=-1;
