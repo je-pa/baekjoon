@@ -14,13 +14,8 @@ public class b1918_postfix {
         for(int i=0 ; i<str.length() ; i++){
             char c = str.charAt(i);
             switch (c){
-                case '+': case '-':
-                    while(!st.empty()&&st.peek()!='('){
-                        sb.append(st.pop());
-                    }st.push(c);
-                    break;
-                case '*': case '/':
-                    if(!st.empty()&&(st.peek()=='*'||st.peek()=='/')){
+                case '+': case '-': case '*': case '/':
+                    while(!st.empty()&& Priority(c)<=Priority(st.peek())){
                         sb.append(st.pop());
                     }st.push(c);
                     break;
@@ -45,5 +40,15 @@ public class b1918_postfix {
             sb.append(st.pop());
         }
         System.out.println(sb);
+    }
+    static int Priority(char c){
+        switch (c){
+            case '(':
+                return 0;
+            case '+': case '-':
+                return 1;
+            default:
+                return 2;
+        }
     }
 }
