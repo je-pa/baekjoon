@@ -1,4 +1,4 @@
-package com.jepa.bj.basic1.dataStructure;
+package com.jepa.bj.basic1.dataStructure1;
 import java.util.Scanner;
 /*9012 괄호*/
 public class b9012_bracket {

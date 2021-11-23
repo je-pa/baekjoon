@@ -1,7 +1,5 @@
-package com.jepa.bj.basic1.dataStructure;
-import java.util.ArrayList;
+package com.jepa.bj.basic1.dataStructure1;
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class b10845_Queue {

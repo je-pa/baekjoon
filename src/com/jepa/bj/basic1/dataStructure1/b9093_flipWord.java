@@ -1,4 +1,4 @@
-package com.jepa.bj.basic1.dataStructure;
+package com.jepa.bj.basic1.dataStructure1;
 import java.util.Scanner;
 public class b9093_flipWord {
         public static void main(String[] args){
