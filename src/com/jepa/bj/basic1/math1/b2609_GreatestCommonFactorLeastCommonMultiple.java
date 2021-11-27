@@ -1,4 +1,4 @@
-package com.jepa.bj.basic1.dataStructure1;
+package com.jepa.bj.basic1.math1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
